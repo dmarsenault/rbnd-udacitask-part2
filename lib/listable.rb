@@ -12,11 +12,13 @@ module Listable
   def format_date (options = {})
     if options[:start_date]
       dates = options[:start_date].strftime("%D")
-    elsif options[:end_date]
-      dates << " -- " + end_date.strftime("%D")
+    if options[:end_date]
+      dates << " -- " + options[:end_date].strftime("%D")
     end
-    !dates = "N/A" if !dates
+    !dates == "N/A" if !dates
     else
     dates = options[:due] ? options[:due].strftime("%D") : "No due date"
+  end
+  return dates
   end
 end

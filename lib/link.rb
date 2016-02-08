@@ -1,5 +1,6 @@
 class LinkItem
   include Listable
+  #include UdaciListErrors
   attr_reader :description, :site_name
 
   def initialize(url, options={})
