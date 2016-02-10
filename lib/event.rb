@@ -1,6 +1,5 @@
 class EventItem
   include Listable
-  #include UdaciListErrors
   attr_reader :description, :start_date, :end_date
 
   def initialize(description, options={})
@@ -8,7 +7,12 @@ class EventItem
     @start_date = Chronic.parse(options[:start_date]) if options[:start_date]
     @end_date = Chronic.parse(options[:end_date]) if options[:end_date]
   end
+
+  def self.type
+    "event"
+  end
+
   def details
-    format_description(@description) + "event dates: " + format_date(start_date: @start_date, end_date: @end_date)
+    "Event: " + format_description(@description) + "event dates: " + format_date(start_date: @start_date, end_date: @end_date)
   end
 end

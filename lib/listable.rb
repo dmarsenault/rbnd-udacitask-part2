@@ -9,7 +9,7 @@ module Listable
     value = "" if !priority
     return value
   end
-  def format_date (options = {})
+  def format_date(options = {})
     if options[:start_date]
       dates = options[:start_date].strftime("%D")
     if options[:end_date]
@@ -20,5 +20,10 @@ module Listable
     dates = options[:due] ? options[:due].strftime("%D") : "No due date"
   end
   return dates
+  end
+  def format_type(type)
+    value = "To-do" if type == "todo"
+    value = "Link" if type == "link"
+    value = "Event" if type == "event"
   end
 end

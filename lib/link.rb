@@ -1,6 +1,5 @@
 class LinkItem
   include Listable
-  #include UdaciListErrors
   attr_reader :description, :site_name
 
   def initialize(url, options={})
@@ -10,7 +9,10 @@ class LinkItem
   def format_name
     @site_name ? @site_name : ""
   end
+  def self.type
+    "link"
+  end
   def details
-    format_description(@description) + "site name: " + format_name
+    "Link: " + format_description(@description) + " site name: " + format_name
   end
 end
