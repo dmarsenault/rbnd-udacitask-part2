@@ -1,6 +1,10 @@
 # What you added to Udacitask 2.0
 # -------------------------------------------------------
 1. What is the gem of your choice and how did you use it?
+I used terminal-table to add a table and border around the list.  If I kept working
+at it I could have separated more columns but I liked at least the aesthetic of
+having a border around the list and separating the number from the description.  It
+is a good start and introduction to what the gem is capable of.
 2. Describe the 2 features you added to the project.
   a) I added an additional list item called wish.  I think wish lists are very
   popular and a good feature to add.

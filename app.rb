@@ -2,7 +2,6 @@ require 'bundler/setup'
 require 'chronic'
 require 'colorize'
 require 'terminal-table'
-# Find a third gem of your choice and add it to your project
 require 'date'
 require_relative "lib/listable"
 require_relative "lib/errors"
@@ -40,7 +39,7 @@ new_list.add("wish", "Travel to Guam")
 # ----------------------------
 # KEEP COMMENTED new_list.add("image", "http://ruby-doc.org") # Throws InvalidItemType error
 # KEEP COMMENTED new_list.delete(9) # Throws an IndexExceedsListSize error
-# new_list.add("todo", "Hack some portals", priority: "super high") # throws an InvalidPriorityValue error
+# KEEP COMMENTED new_list.add("todo", "Hack some portals", priority: "super high") # throws an InvalidPriorityValue error
 
 # DISPLAY UNTITLED LIST
 # ---------------------

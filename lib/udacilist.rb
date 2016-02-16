@@ -50,10 +50,4 @@ class UdaciList
     table = Terminal::Table.new :headings => ["No.", "Description"], :rows => rows
     puts table
   end
-
-
-
-
-
-
 end
