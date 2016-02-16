@@ -25,5 +25,6 @@ module Listable
     value = "To-do" if type == "todo"
     value = "Link" if type == "link"
     value = "Event" if type == "event"
+    value = "Wish" if type == "wish"
   end
 end

@@ -2,7 +2,7 @@ class UdaciList
   attr_reader :type, :title, :items
 
   def initialize(options={})
-    @title = options[:title] || "Untitled List"
+    @title = (options[:title]) || ("Untitled List")
     @items = []
   end
 
@@ -14,6 +14,8 @@ class UdaciList
       @items.push EventItem.new(description, options)
     elsif type == "link"
       @items.push LinkItem.new(description, options)
+    elsif type == "wish"
+      @items.push WishItem.new(description)
     else
       raise UdaciListErrors::InvalidItemType, "Please specify a valid item."
     end
@@ -45,4 +47,10 @@ class UdaciList
       puts "#{position + 1}) #{item.details}"
     end
   end
+
+
+
+
+
+
 end
