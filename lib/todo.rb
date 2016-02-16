@@ -12,6 +12,10 @@ class TodoItem
     "todo"
   end
 
+  def update_priority(new_priority)
+    @priority = new_priority
+  end
+
   def details
     "To-Do: " +
     format_description(@description) + "due: " +

@@ -8,7 +8,7 @@ is a good start and introduction to what the gem is capable of.
 2. Describe the 2 features you added to the project.
   a) I added an additional list item called wish.  I think wish lists are very
   popular and a good feature to add.
-  b) Feature 2...
+  b) I added an update priority option.
 
 # REFLECTIONS
 # -------------------------------------------------------
@@ -17,5 +17,12 @@ Probably about 5 hours.  It took a good 3 HOURS to figure out why my WishItem wa
 giving me a Constant Error.  Of course it was as simple as forgetting to require
 lib/wish in by udacilist.rb file.
 2. What was the most rewarding challenge you conquered?
+The most rewarding is figuring something out when it seems to keep going wrong.
+There are a lot of times that I feel like I keep failing at something, but once
+you keep doing the research and finally get back on track it is very rewarding.
 3. What two additional features did you build? Why?
+I added an additional list item called wish.  You can now add "Wish list" items.
+I feel like a lot of people use lists to create wish lists or bucket lists.  This
+would make this app more useful to a wider audience.
 4. Where do you still have room to grow?
+Still working on growing my fluidity.

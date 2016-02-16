@@ -38,7 +38,6 @@ class UdaciList
     end
   end
 
-
   def all
     rows = []
     puts "-" * @title.length
